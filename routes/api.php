@@ -25,6 +25,5 @@ Route::get('books/{id}','BookController@show'); //show/read data by id
 Route::put('books/{id}','BookController@update'); //update data by id
 Route::delete('books/{id}','BookController@destroy'); //delete data by id
 */
-Route::resource('books','BookController');
-
-
+Route::resource('books', 'BookController');
+Route::resource('authors', 'AuthorController');
